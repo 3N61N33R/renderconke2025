@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Pull Request to Persona</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="slides-container">
+        <!-- Slide 1: Title -->
+        <div class="slide active title-slide">
+            <h1>From Pull Request to Persona</h1>
+            <div class="subtitle">Design Thinking</div>
+            <div class="author">Zawadi Wanjala</div>
+            <div class="role">Software Engineer → Product Manager</div>
+            <div class="conference">RenderCon Kenya 2025</div>
+            <div class="slide-number">1 / 15</div>
+        </div>
+
+        <!-- Slide 2: Who Am I? -->
+        <div class="slide">
+            <h2>I've Been on Both Sides of the Ticket</h2>
+            <div class="split-screen">
+                <div class="left">
+                    <h3>🔧 The Pull Request</h3>
+                    <p><strong>4 years</strong> as a backend engineer</p>
+                    <ul>
+                        <li>Obsessed with clean code</li>
+                        <li>Elegant architecture</li>
+                        <li>Shipping features</li>
+                    </ul>
+                </div>
+                <div class="arrow">→</div>
+                <div class="right">
+                    <h3>👤 The Persona</h3>
+                    <p><strong>Now</strong> a Product Manager</p>
+                    <ul>
+                        <li>Keen on user problems</li>
+                        <li>Business impact</li>
+                        <li>Answering "why?"</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="highlight-box">This talk is about connecting those two worlds.</div>
+            <div class="slide-number">2 / 15</div>
+        </div>
+
+        <!-- Slide 3: The Pain -->
+        <div class="slide">
+            <h2>The Perfectly-Built Wrong Feature</h2>
+            <div style="text-align: center; font-size: 80px; margin: 40px 0;">🌉❌</div>
+            <p style="font-size: 28px; text-align: center; margin-bottom: 30px;">
+                You spend a whole sprint building a feature with perfect state management,
+                clean components, and 100% test coverage.
+            </p>
+            <p style="font-size: 28px; text-align: center; margin-bottom: 30px;">
+                You ship it... and the user feedback is:
+                <span style="color: #ff00ea; font-weight: bold;">"This isn't what I needed."</span>
+            </p>
+            <p style="font-size: 28px; text-align: center; color: #ff00ea;">
+                Or worse... *crickets* 🦗
+            </p>
+            <div class="highlight-box" style="margin-top: 50px;">
+                Impact: Wasted time, team frustration, and low product impact.
+            </div>
+            <div class="slide-number">3 / 15</div>
+        </div>
+
+        <!-- Slide 4: Developer's Dilemma -->
+        <div class="slide">
+            <h2>The Developer's Dilemma</h2>
+            <div style="display: flex; gap: 40px; margin-top: 40px;">
+                <div class="code-block" style="flex: 1;">
+                    <div class="code-block-title">What the Ticket Says</div>
+                    <div class="code-block-content">
+                        Implement a 'date range' filter.
+                    </div>
+                </div>
+                <div class="code-block" style="flex: 1; border-color: #00d9ff;">
+                    <div class="code-block-title">What the User Needs</div>
+                    <div class="code-block-content">
+                        Quickly find my performance from "last quarter" without having to look up dates in a calendar.
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-box" style="margin-top: 50px;">
+                We are trained to be excellent at implementing the left.
+                The magic happens when we learn to ask questions that uncover the right.
+            </div>
+            <div class="slide-number">4 / 15</div>
+        </div>
+
+        <!-- Slide 5: Design Thinking -->
+        <div class="slide">
+            <h2>A Better Way: Design Thinking for Engineers</h2>
+            <h3 style="text-align: center; margin-bottom: 40px;">It's Not About Post-it Notes. It's a Problem-Solving
+                Framework.</h3>
+            <div class="diagram">
+                <div class="diagram-item">
+                    <div class="diagram-icon">🤝</div>
+                    <div class="diagram-label"><strong>Empathize</strong><br>Understand the User Problem</div>
+                </div>
+                <div class="diagram-item">
+                    <div class="diagram-icon">🎯</div>
+                    <div class="diagram-label"><strong>Define</strong><br>Frame the Technical Challenge</div>
+                </div>
+                <div class="diagram-item">
+                    <div class="diagram-icon">💡</div>
+                    <div class="diagram-label"><strong>Ideate</strong><br>Brainstorm Solutions</div>
+                </div>
+                <div class="diagram-item">
+                    <div class="diagram-icon">⚡</div>
+                    <div class="diagram-label"><strong>Prototype</strong><br>Build Low-Fi Version</div>
+                </div>
+                <div class="diagram-item">
+                    <div class="diagram-icon">✅</div>
+                    <div class="diagram-label"><strong>Test</strong><br>Get Early Feedback</div>
+                </div>
+            </div>
+            <div class="slide-number">5 / 15</div>
+        </div>
+
+        <!-- Slide 6: Interactive Challenge Intro -->
+        <div class="slide">
+            <h2 style="text-align: center; font-size: 64px;">Let's Make It Real</h2>
+            <div style="text-align: center; font-size: 80px; margin: 60px 0;">▶️</div>
+            <h3 style="text-align: center; font-size: 48px;">An Interactive Challenge</h3>
+            <p style="text-align: center; font-size: 32px; margin-top: 40px; color: #00d9ff;">
+                Time to Deconstruct a Ticket
+            </p>
+            <div class="slide-number">6 / 15</div>
+        </div>
+
+        <!-- Slide 7: The Ticket -->
+        <div class="slide">
+            <h2>The Ticket</h2>
+            <div class="ticket">
+                <div class="ticket-title">Ticket: FE-1701</div>
+                <div class="ticket-content">
+                    <p><strong>Title:</strong> Add CSV Export to User Dashboard</p>
+                    <p><strong>Description:</strong> As a user, I want to be able to download a CSV of my dashboard
+                        data...</p>
+                    <p><strong>Acceptance Criteria:</strong> A "Download CSV" button is present on the dashboard...</p>
+                </div>
+            </div>
+            <div class="slide-number">7 / 15</div>
+        </div>
+
+        <!-- Slide 8: Meet the Persona -->
+        <div class="slide">
+            <h2>Meet the Persona</h2>
+            <div class="persona">
+                <div style="text-align: center; font-size: 80px; margin-bottom: 20px;">👩‍💼</div>
+                <div class="persona-name">Amina, the Account Manager</div>
+                <div style="font-size: 24px; line-height: 1.8;">
+                    <p><strong style="color: #00d9ff;">Goal:</strong> Create weekly performance reports for her clients.
+                    </p>
+                    <p><strong style="color: #ff00ea;">Pain Point:</strong> Manually copy-pasting data into Excel is
+                        slow and error-prone.</p>
+                </div>
+            </div>
+            <div class="highlight-box">
+                This ticket is for Amina.
+            </div>
+            <div class="slide-number">8 / 15</div>
+        </div>
+
+        <!-- Slide 9: The Prompt -->
+        <div class="slide">
+            <h2 style="text-align: center;">The Challenge</h2>
+            <div style="text-align: center; font-size: 72px; margin: 40px 0;">❓</div>
+            <p style="font-size: 32px; text-align: center; margin-bottom: 40px;">
+                Knowing about Amina, what <strong style="color: #00d9ff;">critical questions</strong> would you ask the
+                PM or Designer <strong>before</strong> writing a single line of code?
+            </p>
+            <div class="highlight-box" style="text-align: center;">
+                You have 60 seconds. Turn to your neighbour or think on your own.
+            </div>
+            <div class="timer" id="timer">60</div>
+            <div class="slide-number">9 / 15</div>
+        </div>
+
+        <!-- Slide 10: The Debrief -->
+        <div class="slide">
+            <h2>The Debrief: Unlocking Real Value</h2>
+            <div style="margin-top: 40px;">
+                <p style="font-size: 28px; margin-bottom: 30px;">
+                    <strong style="color: #888;">You've moved from:</strong> "What library should I use?"
+                </p>
+                <div class="code-block" style="border-color: #ff00ea;">
+                    <div class="code-block-title" style="color: #ff00ea;">❌ Implementation-Focused</div>
+                    <div class="code-block-content" style="color: #888; text-decoration: line-through;">
+                        "Should I use Papa Parse or CSV-Parser?"
+                    </div>
+                </div>
+                <div class="code-block" style="border-color: #00d9ff;">
+                    <div class="code-block-title">✅ Solution-Focused Questions</div>
+                    <div class="code-block-content">
+                        • What <strong>specific columns</strong> does Amina need for her report?<br>
+                        • Does she need to filter by a <strong>date range</strong> before exporting?<br>
+                        • Could the CSV <strong>match her template format</strong> to save even more time?
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-box" style="margin-top: 40px;">
+                This is how you prevent rework and build features people love.
+            </div>
+            <div class="slide-number">10 / 15</div>
+        </div>
+
+        <!-- Slide 11: Engineering Toolkit -->
+        <div class="slide">
+            <h2>Your Engineering Toolkit for Empathy</h2>
+            <h3 style="text-align: center; margin-bottom: 50px;">Practical Tools You Can Use Tomorrow</h3>
+            <div style="margin-top: 40px;">
+                <div class="code-block">
+                    <div class="code-block-title">🔍 Tool #1: Question the Ticket</div>
+                    <div class="code-block-content">We just did this! Always look for the "why" behind the "what."</div>
+                </div>
+                <div class="code-block">
+                    <div class="code-block-title">⚡ Tool #2: Leverage Storybook as a Prototyping Tool</div>
+                    <div class="code-block-content">Build and share interactive components before full integration.
+                    </div>
+                </div>
+                <div class="code-block">
+                    <div class="code-block-title">❓ Tool #3: Master the "5 Whys"</div>
+                    <div class="code-block-content">Keep asking "why" to get to the root cause of user needs.</div>
+                </div>
+            </div>
+            <div class="slide-number">11 / 15</div>
+        </div>
+
+        <!-- Slide 12: Storybook -->
+        <div class="slide">
+            <h2>Storybook: More Than a Component Library</h2>
+            <h3 style="color: #00d9ff; margin-bottom: 40px;">Use Storybook to Have Conversations</h3>
+            <div style="font-size: 24px; line-height: 2;">
+                <p>✅ Instead of waiting until the PR, build your component in Storybook first.</p>
+                <p>✅ Share the link with your PM and Designer.</p>
+                <p>✅ They can "play" with the props and states in the Controls panel.</p>
+            </div>
+            <div class="highlight-box" style="margin-top: 50px;">
+                <strong>Result:</strong> You get super-fast feedback on edge cases and variations
+                <em>before</em> you integrate it into the app.
+            </div>
+            <div class="slide-number">12 / 15</div>
+        </div>
+
+        <!-- Slide 13: Impact -->
+        <div class="slide">
+            <h2>Why This Matters</h2>
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <div class="impact-icon">💻</div>
+                    <div class="impact-title">Less Rework</div>
+                    <div class="impact-text">Build the right thing the first time.</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-icon">📢</div>
+                    <div class="impact-title">More Influence</div>
+                    <div class="impact-text">Your technical expertise helps shape the product direction.</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-icon">🚀</div>
+                    <div class="impact-title">Better Products</div>
+                    <div class="impact-text">The team ships features that solve real user problems.</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-icon">📈</div>
+                    <div class="impact-title">Career Growth</div>
+                    <div class="impact-text">You become a more valuable, solution-oriented engineer.</div>
+                </div>
+            </div>
+            <div class="slide-number">13 / 15</div>
+        </div>
+
+        <!-- Slide 14: Key Takeaways -->
+        <div class="slide">
+            <h2>Key Takeaways</h2>
+            <div style="margin-top: 60px;">
+                <div class="code-block">
+                    <div class="code-block-title">1️⃣ Look for the Persona Behind the PR</div>
+                    <div class="code-block-content">Your user is not an abstract concept.</div>
+                </div>
+                <div class="code-block">
+                    <div class="code-block-title">2️⃣ Ask "Why?"</div>
+                    <div class="code-block-content">The most powerful question an engineer can ask.</div>
+                </div>
+                <div class="code-block">
+                    <div class="code-block-title">3️⃣ Use Your Tools for Collaboration</div>
+                    <div class="code-block-content">Storybook isn't just for you; it's for your team.</div>
+                </div>
+            </div>
+            <div class="highlight-box" style="margin-top: 50px; text-align: center; font-size: 32px;">
+                You don't need to be a designer to think like one.
+            </div>
+            <div class="slide-number">14 / 15</div>
+        </div>
+
+        <!-- Slide 15: Thank You -->
+        <div class="slide title-slide">
+            <h2 style="font-size: 64px; margin-bottom: 40px;">Let's Connect!</h2>
+            <div style="text-align: center; font-size: 120px; margin: 40px 0;">👋</div>
+            <div class="contact">
+                <div class="author" style="margin-bottom: 30px;">[Your Name]</div>
+                <div class="contact-item">🔗 LinkedIn: Zawadi Wanjala/div>
+                    <div class="contact-item">🐦 Twitter/X: @zawadi_g_</div>
+                </div>
+                <h3 style="margin-top: 60px; font-size: 36px;">Questions?</h3>
+                <div class="slide-number">15 / 15</div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">← Previous</button>
+            <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">Next →</button>
+        </div>
+
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+            let timerInterval;
+
+            function showSlide(n) {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (n + totalSlides) % totalSlides;
+                slides[currentSlide].classList.add('active');
+
+                document.getElementById('prevBtn').disabled = currentSlide === 0;
+                document.getElementById('nextBtn').disabled = currentSlide === totalSlides - 1;
+
+                if (currentSlide === 8) {
+                    startTimer();
+                } else {
+                    stopTimer();
+                }
+            }
+
+            function changeSlide(direction) {
+                showSlide(currentSlide + direction);
+            }
+
+            function startTimer() {
+                let timeLeft = 60;
+                const timerElement = document.getElementById('timer');
+
+                stopTimer();
+
+                timerInterval = setInterval(() => {
+                    timeLeft--;
+                    timerElement.textContent = timeLeft;
+
+                    if (timeLeft <= 10) {
+                        timerElement.style.color = '#ff00ea';
+                    }
+
+                    if (timeLeft <= 0) {
+                        stopTimer();
+                        timerElement.textContent = "Time's Up!";
+                    }
+                }, 1000);
+            }
+
+            function stopTimer() {
+                if (timerInterval) {
+                    clearInterval(timerInterval);
+                    timerInterval = null;
+                }
+                const timerElement = document.getElementById('timer');
+                if (timerElement) {
+                    timerElement.textContent = '60';
+                    timerElement.style.color = '#ff00ea';
+                }
+            }
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight' && currentSlide < totalSlides - 1) {
+                    changeSlide(1);
+                } else if (e.key === 'ArrowLeft' && currentSlide > 0) {
+                    changeSlide(-1);
+                }
+            });
+
+            showSlide(0);
+        </script>
+</body>
+
+</html>
